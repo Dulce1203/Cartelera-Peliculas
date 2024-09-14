@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación FROT - Cine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cartelera de Cines</h1>
+    </header>
+
+    <main>
+        <section id="movie-list">
+            <!-- Películas recientes agregadas -->
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg" alt="Oppenheimer">
+                <h3>Oppenheimer</h3>
+                <p>Un drama épico sobre el creador de la bomba atómica.</p>
+                <p><strong>Año:</strong> 2023</p>
+                <p><strong>Género:</strong> Drama, Historia</p>
+                <p><strong>Ubicación:</strong> Sala 3</p>
+                <p><strong>Estado:</strong> Activo</p>
+                <button>Eliminar</button>
+            </div>
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg" alt="Misión Imposible">
+                <h3>Misión Imposible: Sentencia Mortal</h3>
+                <p>Una nueva entrega de acción con Ethan Hunt.</p>
+                <p><strong>Año:</strong> 2023</p>
+                <p><strong>Género:</strong> Acción, Suspenso</p>
+                <p><strong>Ubicación:</strong> Sala 1</p>
+                <p><strong>Estado:</strong> Activo</p>
+                <button>Eliminar</button>
+            </div>
+            <div class="movie-card">
+                <img src="../CRUD COMPLETO/Multimedia/Captura de pantalla 2024-09-13 191144.png" alt="Barbie">
+                <h3>Barbie</h3>
+                <p>Una historia divertida y colorida de Barbie en el mundo real.</p>
+                <p><strong>Año:</strong> 2023</p>
+                <p><strong>Género:</strong> Comedia, Aventura</p>
+                <p><strong>Ubicación:</strong> Sala 2</p>
+                <p><strong>Estado:</strong> Activo</p>
+                <button>Eliminar</button>
+            </div>
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/gPbM0MK8CP8A174rmUwGsADNYKD.jpg" alt="The Flash">
+                <h3>The Flash</h3>
+                <p>El velocista escarlata regresa para cambiar el curso del tiempo.</p>
+                <p><strong>Año:</strong> 2023</p>
+                <p><strong>Género:</strong> Acción, Ciencia Ficción</p>
+                <p><strong>Ubicación:</strong> Sala 4</p>
+                <p><strong>Estado:</strong> Activo</p>
+                <button>Eliminar</button>
+            </div>
+            <div class="movie-card">
+                <img src="../CRUD COMPLETO/Multimedia/6GkKzdNosVAL7UGgwTtCHSxLQ67.jpg" alt="Guardianes de la Galaxia Vol. 3">
+                <h3>Guardianes de la Galaxia Vol. 3</h3>
+                <p>Los Guardianes se enfrentan a nuevas aventuras intergalácticas.</p>
+                <p><strong>Año:</strong> 2023</p>
+                <p><strong>Género:</strong> Ciencia Ficción, Aventura</p>
+                <p><strong>Ubicación:</strong> Sala 5</p>
+                <p><strong>Estado:</strong> Activo</p>
+                <button>Eliminar</button>
+            </div>
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/k68nPLbIST6NP96JmTxmZijEvCA.jpg" alt="Spider-Man: Across the Spider-Verse">
+                <h3>Spider-Man: Across the Spider-Verse</h3>
+                <p>Miles Morales viaja a través de multiversos con otros Spider-Men.</p>
+                <p><strong>Año:</strong> 2023</p>
+                <p><strong>Género:</strong> Animación, Aventura</p>
+                <p><strong>Ubicación:</strong> Sala 6</p>
+                <p><strong>Estado:</strong> Activo</p>
+                <button>Eliminar</button>
+            </div>
+        </section>
+
+        <section id="movie-form">
+            <h2>Añadir / Editar Película</h2>
+            <form id="form">
+                <input type="text" id="imdbID" placeholder="IMDB ID" required>
+                <input type="text" id="Title" placeholder="Título" required>
+                <input type="text" id="Year" placeholder="Año" required>
+                <input type="text" id="Type" placeholder="Género" required>
+                <input type="text" id="Poster" placeholder="URL del Poster" required>
+                <textarea id="description" placeholder="Descripción" required></textarea>
+                <input type="text" id="Ubication" placeholder="Ubicación" required>
+                <label for="Estado">
+                    <input type="checkbox" id="Estado"> Estado
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
